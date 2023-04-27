@@ -63,9 +63,9 @@ Evaluation results (averaged between classes):
 | 32.898 | 44.665 | 39.985 | 0.000 | 30.848 | 41.073 |
 
 Evaluation results (per-class):
-| category       | AP   | category   | AP     | category   | AP    |
-|:---------------|:-----|:-----------|:-------|:-----------|:------|
-| books-and-cars | nan  | book       | 65.797 | car        | 0.000 |
+| category   | AP     | category   | AP    |
+|:-----------|:-------|:-----------|:------|
+| book       | 65.797 | car        | 0.000 |
 
 As you can see, there is no progress with cars segmentation.
 
@@ -73,10 +73,10 @@ Possible reasons are:
 
 1. Class imbalance:
 
-|  category  | #instances   |  category  | #instances   |  category  | #instances   |
-|:----------:|:-------------|:----------:|:-------------|:----------:|:-------------|
-| books-cars | 0            |    book    | 470          |    car     | 282          |
-|   total    | 752          |            |              |            |              |
+|  category  | #instances   |  category  | #instances   |
+|:----------:|:-------------|:----------:|:-------------|
+| book       | 470          |    car     | 282          |
+|   total    | 752          |            |              |
 
 2. Poor Dataset Quality:
 
